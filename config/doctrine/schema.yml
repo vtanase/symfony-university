@@ -1,0 +1,5 @@
+News:
+        actAs : {Timestampable : ~}
+        columns :
+                title: {type: string(255), notnull: true}
+                body: {type: string(10000), notnull: true}

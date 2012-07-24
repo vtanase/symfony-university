@@ -1,0 +1,7 @@
+News:
+        news1:
+                title: My first news
+                body: The news body can be very long some times!!
+        news2:
+                title: My second news
+                body: The second news body can be even longer than the first one!!!
