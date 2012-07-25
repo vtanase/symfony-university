@@ -1,0 +1,70 @@
+body, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#right {
+    float: right;
+    width: 15%;
+}
+
+#left {
+    float: left;
+    width: 15%;
+}
+
+#content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #ff6600;
+    height: 120px;
+}
+
+#header .title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+#header .subtitle {
+    color: white;
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+#sidebar {
+    float: left;
+    width: 15%;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar li {
+    background-color: #ff6600;
+    margin-top: 1px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: gray;
+}
+
+#main-content {
+    background-color: #f6f6ef;
+}

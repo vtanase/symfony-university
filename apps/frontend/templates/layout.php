@@ -9,6 +9,25 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-    <?php echo $sf_content ?>
+    <div id = "right">&nbsp;</div>
+    <div id = "left">&nbsp;</div>
+    <div id = "content">
+      <div id = "header">
+        <br/>
+        <span class = "title">Universitatea Transilvania</span><br/>
+        <span class = "subtitle">Facultatea de Matematica - Informatica</span>
+      </div>
+      <div id = "sidebar">
+        <ul>
+          <li><a href = "#">Stiri</a></li>
+          <li><a href = "#">Profesori</a></li>
+          <li><a href = "#">Oferta cursuri</a></li>
+          <li><a href = "#">Contact</a></li>
+        </ul>
+      </div>
+      <div id = "main-content">
+        <?php echo $sf_content ?>
+      </div>
+    </div>
   </body>
 </html>
