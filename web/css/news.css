@@ -1,0 +1,18 @@
+#news-title {
+    font-weight: bold;
+}
+
+#news-title a {
+    text-decoration: none;
+    color: black;
+}
+
+#news-posted-at {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#news-body {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}

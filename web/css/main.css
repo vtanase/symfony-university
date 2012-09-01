@@ -67,4 +67,6 @@ body, ul{
 
 #main-content {
     background-color: #f6f6ef;
+    float: left;
+    width: 85%;
 }

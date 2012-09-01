@@ -1,4 +1,17 @@
-<table>
+<?php use_stylesheet('news.css')?>
+
+
+<h1><?php echo $news->getTitle()?></h1>
+<div id = "news-posted-at">
+  posted at: <?php echo $news->getCreatedAt()?>
+</div>
+<div id = "spacer-20"/>
+<div id = "news-body">
+  <?php echo $news->getBody() ?>
+</div>
+
+
+<!--<table>
   <tbody>
     <tr>
       <th>Id:</th>
@@ -21,9 +34,7 @@
       <td><?php echo $news->getUpdatedAt() ?></td>
     </tr>
   </tbody>
-</table>
-
-<hr />
+</table>-->
 
 <a href="<?php echo url_for('news/edit?id='.$news->getId()) ?>">Edit</a>
 &nbsp;
