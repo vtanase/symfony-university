@@ -1,0 +1,26 @@
+Teacher:
+        teacher1:
+                name: Teacher 1
+                degree: Prof. univ. dr.
+                interests: Lorem ipsum dolor sit amet.
+        teacher2:
+                name: Teacher 2
+                degree: Lect. dr.
+                interests: Some other interests, not like the first one.
+
+TeacherPublication:
+        publication1:
+                name: Publication 1
+                authors: Teacher 1, Someone Else
+                publicationYear: 1999
+                Teacher: teacher1
+        publication2:
+                name: Publication 2
+                authors: Teacher 1, Somebody Else
+                publicationYear: 2001
+                Teacher: teacher1
+        publication3:
+                name: Publication 3
+                authors: Teacher2, Teacher2's Mom
+                publicationYear: 2010
+                Teacher: teacher2

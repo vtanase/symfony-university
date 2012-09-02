@@ -19,8 +19,8 @@
       </div>
       <div id = "sidebar">
         <ul>
-          <li><a href = "#">Stiri</a></li>
-          <li><a href = "#">Profesori</a></li>
+          <li><a href = "<?php echo url_for('homepage')?>">Stiri</a></li>
+          <li><a href = "<?php echo url_for('teacher') ?>">Profesori</a></li>
           <li><a href = "#">Oferta cursuri</a></li>
           <li><a href = "#">Contact</a></li>
         </ul>
