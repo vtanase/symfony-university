@@ -1,4 +1,15 @@
-<table>
+<?php use_stylesheet('teacher.css') ?>
+
+<h1><?php echo $teacher->getName() ?></h1>
+<div id="teacher-interests">
+  <span class="bold">Interese profesionale: </span> <?php echo $teacher->getInterests()?>
+</div>
+<div id="teacher-publications">
+  <span class="bold">Publications: </span>
+  Add teacher publications here!!!
+</div>
+
+<!--<table>
   <tbody>
     <tr>
       <th>Id:</th>
@@ -25,9 +36,8 @@
       <td><?php echo $teacher->getUpdatedAt() ?></td>
     </tr>
   </tbody>
-</table>
+</table>-->
 
-<hr />
 
 <a href="<?php echo url_for('teacher/edit?id='.$teacher->getId()) ?>">Edit</a>
 &nbsp;

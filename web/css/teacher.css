@@ -9,6 +9,16 @@
     padding-bottom: 20px;
 }
 
+#teacher-publications {
+    padding-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+#teacher-publications span{
+    font-size: 20px;
+}
+
 .bold {
     font-weight: bold;
 }
