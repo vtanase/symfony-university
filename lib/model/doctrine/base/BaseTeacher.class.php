@@ -8,15 +8,18 @@
  * @property string $name
  * @property string $degree
  * @property string $interests
+ * @property integer $priority
  * @property Doctrine_Collection $TeacherPublication
  * 
  * @method string              getName()               Returns the current record's "name" value
  * @method string              getDegree()             Returns the current record's "degree" value
  * @method string              getInterests()          Returns the current record's "interests" value
+ * @method integer             getPriority()           Returns the current record's "priority" value
  * @method Doctrine_Collection getTeacherPublication() Returns the current record's "TeacherPublication" collection
  * @method Teacher             setName()               Sets the current record's "name" value
  * @method Teacher             setDegree()             Sets the current record's "degree" value
  * @method Teacher             setInterests()          Sets the current record's "interests" value
+ * @method Teacher             setPriority()           Sets the current record's "priority" value
  * @method Teacher             setTeacherPublication() Sets the current record's "TeacherPublication" collection
  * 
  * @package    symfony-university
@@ -43,6 +46,10 @@ abstract class BaseTeacher extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => false,
              'length' => 255,
+             ));
+        $this->hasColumn('priority', 'integer', null, array(
+             'type' => 'integer',
+             'notnull' => true,
              ));
     }
 

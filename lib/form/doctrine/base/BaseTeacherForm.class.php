@@ -19,6 +19,7 @@ abstract class BaseTeacherForm extends BaseFormDoctrine
       'name'       => new sfWidgetFormInputText(),
       'degree'     => new sfWidgetFormInputText(),
       'interests'  => new sfWidgetFormInputText(),
+      'priority'   => new sfWidgetFormInputText(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
@@ -28,6 +29,7 @@ abstract class BaseTeacherForm extends BaseFormDoctrine
       'name'       => new sfValidatorString(array('max_length' => 255)),
       'degree'     => new sfValidatorString(array('max_length' => 50)),
       'interests'  => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'priority'   => new sfValidatorInteger(),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

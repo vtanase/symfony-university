@@ -1,6 +1,21 @@
-<h1>Teachers List</h1>
+<?php use_stylesheet('teacher.css') ?>
 
-<table>
+<h1>Profesorii facultatii</h1>
+
+<?php foreach ($teachers as $teacher): ?>
+
+  <h2 id="teacher-name">
+    <a href="<?php echo url_for('teacher/show?id='.$teacher->getId()) ?>">
+      <?php echo $teacher->getDegree() ?> <?php echo $teacher->getName() ?>
+    </a>
+  </h2>
+  <div id="teacher-interests">
+    <span class="bold"> Interese profesionale:</span> <?php echo $teacher->getInterests() ?>
+  </div>
+
+<?php endforeach; ?>
+
+<!--<table>
   <thead>
     <tr>
       <th>Id</th>
@@ -23,6 +38,6 @@
     </tr>
     <?php endforeach; ?>
   </tbody>
-</table>
+</table>-->
 
   <a href="<?php echo url_for('teacher/new') ?>">New</a>

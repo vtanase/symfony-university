@@ -10,6 +10,7 @@ Teacher:
                 name: {type: string(255), notnull: true}
                 degree: {type: string(50), notnull: true}
                 interests: {type: string(255), notnull: false}
+                priority: {type: integer, notnull: true}
 
 TeacherPublication:
         actAs: {Timestampable: ~}

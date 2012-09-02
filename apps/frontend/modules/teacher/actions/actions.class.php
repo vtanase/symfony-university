@@ -12,9 +12,8 @@ class teacherActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->teachers = Doctrine_Core::getTable('Teacher')
-      ->createQuery('a')
-      ->execute();
+    // display teachers ordered by priority
+    $this->teachers = Doctrine_Core::getTable('Teacher')->getTeachersOrderedByPriority();
   }
 
   public function executeShow(sfWebRequest $request)

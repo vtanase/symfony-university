@@ -3,10 +3,12 @@ Teacher:
                 name: Teacher 1
                 degree: Prof. univ. dr.
                 interests: Lorem ipsum dolor sit amet.
+                priority: 2
         teacher2:
                 name: Teacher 2
                 degree: Lect. dr.
                 interests: Some other interests, not like the first one.
+                priority: 1
 
 TeacherPublication:
         publication1:

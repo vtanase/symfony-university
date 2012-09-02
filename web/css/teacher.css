@@ -1,0 +1,14 @@
+#teacher-name a{
+    text-decoration: none;
+    color: black;
+}
+
+#teacher-interests {
+    font-style: italic;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}

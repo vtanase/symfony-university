@@ -16,4 +16,11 @@ class TeacherTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Teacher');
     }
+
+    public function getTeachersOrderedByPriority()
+    {
+      $query = $this->createQuery('t')
+        ->orderBy('t.priority ASC');
+      return $query->execute();
+    }
 }
