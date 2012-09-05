@@ -1,4 +1,16 @@
-<table>
+<?php use_stylesheet('course.css') ?>
+
+<h1><?php echo $course->getName() ?></h1>
+
+<h3 id = "course-teacher"> Profesor titular: <?php echo $course->getTeacher()->getDegree()." ".$course->getTeacher()->getName() ?></h3>
+
+<div id = "course-description">
+   <b>Descriere curs:</b>
+   <?php echo $course->getDescription() ?>
+</div>
+
+
+<!--<table>
   <tbody>
     <tr>
       <th>Id:</th>
@@ -31,7 +43,7 @@
   </tbody>
 </table>
 
-<hr />
+<hr />-->
 
 <a href="<?php echo url_for('course/edit?id='.$course->getId()) ?>">Edit</a>
 &nbsp;

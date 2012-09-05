@@ -1,6 +1,20 @@
-<h1>Courses List</h1>
+<?php use_stylesheet('course.css') ?>
 
-<table>
+<h1>Cursuri</h1>
+
+
+  <?php foreach ($courses as $course): ?>
+    <h2 id = "course-name">
+      <a href="<?php echo url_for('course/show?id='.$course->getId()) ?>">
+        <?php echo $course->getName() ?>
+      </a>
+      <span id = "course-teacher"><?php echo $course->getTeacher()->getDegree().$course->getTeacher()->getName()?></span>
+    </h2>
+  <?php endforeach; ?>
+<br/>
+
+
+<!--<table>
   <thead>
     <tr>
       <th>Id</th>
@@ -25,6 +39,6 @@
     </tr>
     <?php endforeach; ?>
   </tbody>
-</table>
+</table>-->
 
   <a href="<?php echo url_for('course/new') ?>">New</a>
