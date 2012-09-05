@@ -2,6 +2,11 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+
+course:
+  url:   /course
+  param: {module: course, action: index}
+
 teacher:
   url:   /teacher
   param: {module: teacher, action: index}

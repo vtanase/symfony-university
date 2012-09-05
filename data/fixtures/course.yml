@@ -1,0 +1,18 @@
+Course:
+        course1:
+                name: Algoritmica
+                description: Cursul de algoritmica
+                semester: 1
+                Teacher: teacher1
+
+        course2:
+                name: POO
+                description: Cursul de POO
+                semester: 2
+                Teacher: teacher2
+
+        course3:
+                name: POO 2
+                description: Cursul de POO 2
+                semester: 3
+                Teacher: teacher2

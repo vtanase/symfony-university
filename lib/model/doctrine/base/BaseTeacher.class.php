@@ -10,17 +10,20 @@
  * @property string $interests
  * @property integer $priority
  * @property Doctrine_Collection $TeacherPublication
+ * @property Doctrine_Collection $Course
  * 
  * @method string              getName()               Returns the current record's "name" value
  * @method string              getDegree()             Returns the current record's "degree" value
  * @method string              getInterests()          Returns the current record's "interests" value
  * @method integer             getPriority()           Returns the current record's "priority" value
  * @method Doctrine_Collection getTeacherPublication() Returns the current record's "TeacherPublication" collection
+ * @method Doctrine_Collection getCourse()             Returns the current record's "Course" collection
  * @method Teacher             setName()               Sets the current record's "name" value
  * @method Teacher             setDegree()             Sets the current record's "degree" value
  * @method Teacher             setInterests()          Sets the current record's "interests" value
  * @method Teacher             setPriority()           Sets the current record's "priority" value
  * @method Teacher             setTeacherPublication() Sets the current record's "TeacherPublication" collection
+ * @method Teacher             setCourse()             Sets the current record's "Course" collection
  * 
  * @package    symfony-university
  * @subpackage model
@@ -57,6 +60,10 @@ abstract class BaseTeacher extends sfDoctrineRecord
     {
         parent::setUp();
         $this->hasMany('TeacherPublication', array(
+             'local' => 'id',
+             'foreign' => 'teacher_id'));
+
+        $this->hasMany('Course', array(
              'local' => 'id',
              'foreign' => 'teacher_id'));
 

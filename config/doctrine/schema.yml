@@ -23,3 +23,13 @@ TeacherPublication:
                 teacher_id: {type: integer, notnull: true}
         relations:
                 Teacher: {onDelete: CASCADE, local: teacher_id, foreign: id}
+
+Course:
+        actAs: {Timestampable: ~}
+        columns:
+                name: {type: string(255), notnull: true}
+                description: {type: string(10000), notnull: true}
+                teacher_id: {type: integer, notnull: true}
+                semester: {type: integer, notnull: true}
+        relations:
+                Teacher: {onDelete: CASCADE, local: teacher_id, foreign: id}
