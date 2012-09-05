@@ -6,7 +6,11 @@
 </div>
 <div id="teacher-publications">
   <span class="bold">Publications: </span>
-  Add teacher publications here!!!
+  <ul>
+    <?php foreach ($teacher->getTeacherPublication() as $publication): ?>
+      <li><?php echo $publication->getPublicationYear()?> -> <?php echo $publication->getName() ?> -- <?php echo $publication->getAuthors() ?></li>
+    <?php endforeach; ?>
+  </ul>
 </div>
 
 <!--<table>

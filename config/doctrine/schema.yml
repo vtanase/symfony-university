@@ -11,6 +11,8 @@ Teacher:
                 degree: {type: string(50), notnull: true}
                 interests: {type: string(255), notnull: false}
                 priority: {type: integer, notnull: true}
+        relations:
+                TeacherPublication: {local: id, foreign: teacher_id, type many}
 
 TeacherPublication:
         actAs: {Timestampable: ~}
