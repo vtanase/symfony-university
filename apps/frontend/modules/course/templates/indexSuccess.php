@@ -40,5 +40,3 @@
     <?php endforeach; ?>
   </tbody>
 </table>-->
-
-  <a href="<?php echo url_for('course/new') ?>">New</a>

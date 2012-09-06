@@ -44,7 +44,3 @@
 </table>
 
 <hr />-->
-
-<a href="<?php echo url_for('course/edit?id='.$course->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('course/index') ?>">List</a>

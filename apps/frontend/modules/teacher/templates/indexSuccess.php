@@ -40,4 +40,3 @@
   </tbody>
 </table>-->
 
-  <a href="<?php echo url_for('teacher/new') ?>">New</a>

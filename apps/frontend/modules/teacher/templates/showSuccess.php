@@ -41,8 +41,3 @@
     </tr>
   </tbody>
 </table>-->
-
-
-<a href="<?php echo url_for('teacher/edit?id='.$teacher->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('teacher/index') ?>">List</a>

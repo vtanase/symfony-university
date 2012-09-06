@@ -35,7 +35,3 @@
     </tr>
   </tbody>
 </table>-->
-
-<a href="<?php echo url_for('news/edit?id='.$news->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('news/index') ?>">List</a>
