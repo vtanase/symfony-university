@@ -9,6 +9,22 @@
     <?php include_javascripts() ?>
   </head>
   <body>
-    <?php echo $sf_content ?>
+   <?php if ($sf_user->isAuthenticated()): ?>
+     <div id = "menu">
+       <ul>
+        <li>
+          <?php echo link_to('News', 'news') ?>
+        </li>
+        <li>
+          <?php echo link_to('Teacher', 'teacher') ?>
+        </li>
+        <li>
+          <?php echo link_to('Course', 'course') ?>
+        </li>
+        <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
+       </ul>
+     </div>
+   <?php endif ?>
+   <?php echo $sf_content ?>
   </body>
 </html>
