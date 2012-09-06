@@ -1,0 +1,43 @@
+course:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Course
+    module:               course
+    prefix_path:          /course
+    column:               id
+    with_wildcard_routes: true
+
+teacher:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Teacher
+    module:               teacher
+    prefix_path:          /teacher
+    column:               id
+    with_wildcard_routes: true
+
+news:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                News
+    module:               news
+    prefix_path:          /news
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: news, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
